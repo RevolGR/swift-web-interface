@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&display=swap");
+@font-face {
+  font-family: "Dirtyline 36Daysoftype 2022";
+  src: url("../public/Dirtyline 36daysoftype 2022.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Arial";
+  src: url("../public/FontsFree-Net-arial-bold.ttf");
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-outfit: Outfit;
+  --font-arial: Arial;
+  --font-dirtyline-36daysoftype-2022: "Dirtyline 36Daysoftype 2022";
+
+  /* font sizes */
+  --font-size-base: 11px;
+  --font-size-lg: 14px;
+  --font-size-xl: 16px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 48px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-greenyellow: #b8f800;
+  --color-gray-100: #111;
+  --color-lightsteelblue: #a0aec0;
+
+  /* border radiuses */
+  --br-sm: 6px;
+  --br-md: 11px;
+  --br-lg: 14px;
+}

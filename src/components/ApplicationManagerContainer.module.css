@@ -1,0 +1,41 @@
+.applicationManagerContainer1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-md);
+  background-color: var(--color-gray-100);
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.75);
+  width: 216px;
+  height: 109px;
+}
+.reactIconsriridatabase2fill {
+  position: absolute;
+  top: 85px;
+  left: 13px;
+  width: 15px;
+  height: 15px;
+}
+.accessToAll,
+.applicationManager {
+  position: absolute;
+  top: 40px;
+  left: 13px;
+  font-weight: 500;
+}
+.applicationManager {
+  top: 10px;
+  font-size: var(--font-size-2xl);
+  text-transform: capitalize;
+  color: var(--color-white);
+}
+.applicationManagerContainer {
+  position: absolute;
+  top: 306px;
+  left: 753px;
+  width: 216px;
+  height: 109px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-lightsteelblue);
+  font-family: var(--font-outfit);
+}
