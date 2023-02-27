@@ -17,8 +17,8 @@ body {
 :root {
   /* fonts */
   --font-outfit: Outfit;
-  --font-arial: Arial;
   --font-dirtyline-36daysoftype-2022: "Dirtyline 36Daysoftype 2022";
+  --font-arial: Arial;
 
   /* font sizes */
   --font-size-base: 11px;
@@ -30,8 +30,8 @@ body {
   /* Colors */
   --color-white: #fff;
   --color-greenyellow: #b8f800;
-  --color-gray-100: #111;
   --color-lightsteelblue: #a0aec0;
+  --color-gray-100: #111;
 
   /* border radiuses */
   --br-sm: 6px;
