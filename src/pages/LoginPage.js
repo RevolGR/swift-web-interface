@@ -1,6 +1,6 @@
 import { useCallback } from "react";
-import YoutubeSubscribersContainer from "../components/YoutubeSubscribersContainer";
-import ApplicationManagerContainer from "../components/ApplicationManagerContainer";
+import TwitterFollowers from "../components/TwitterFollowers";
+import YoutubeSubs from "../components/YoutubeSubs";
 import styles from "./LoginPage.module.css";
 
 const LoginPage = () => {
@@ -20,53 +20,11 @@ const LoginPage = () => {
           alt=""
           src="../bg-left-side@2x.png"
         />
-        <div className={styles.bgRightSide} />
-      </div>
-      <YoutubeSubscribersContainer
-        socialMediaImageUrl="../reacticonsririyoutubefill.svg"
-        socialMediaSubs="youtube-subs"
-        socialMediaSubsText="YouTube Subscribers"
-        youtubeSubsLeft="753px"
-      />
-      <YoutubeSubscribersContainer
-        socialMediaImageUrl="../reacticonsriritwitterfill.svg"
-        socialMediaSubs="twitter-followers"
-        socialMediaSubsText="Twitter Followers"
-        youtubeSubsLeft="1090px"
-        propMargin="0"
-      />
-      <ApplicationManagerContainer
-        loginpagefeaturesiconImageUrl="../reacticonsriridatabase2fill.svg"
-        loginpagefeaturesdescText="Access to all past applications"
-        loginpagefeaturestitleText="Application Manager"
-        propLeft="753px"
-      />
-      <ApplicationManagerContainer
-        loginpagefeaturesiconImageUrl="../reacticonsimimclock.svg"
-        loginpagefeaturesdescText="Soon!"
-        loginpagefeaturestitleText="Project Scheduler"
-        propLeft="1205px"
-      />
-      <ApplicationManagerContainer
-        loginpagefeaturesiconImageUrl="../reacticonsimimcalendar.svg"
-        loginpagefeaturesdescText="Soon!"
-        loginpagefeaturestitleText="Meeting Calendar"
-        propLeft="979px"
-      />
-      <img
-        className={styles.worldPictureContainer}
-        alt=""
-        src="../world-picture-container@2x.png"
-      />
-      <div className={styles.poweredByContainer}>
-        <div className={styles.poweredByTeamContainer}>
-          <span className={styles.poweredBy}>{`Powered by `}</span>
-          <span className={styles.teamSwift}>TEAM SWIFT</span>
-        </div>
-      </div>
-      <div className={styles.topTextContainer}>
-        <div className={styles.poweredByTeamContainer}>SwiFT BOT INTERFACE</div>
-        <b className={styles.newerfasterbetter}>#NEWERFASTERBETTER</b>
+        <img
+          className={styles.bgRightSide}
+          alt=""
+          src="../bg-right-side@2x.png"
+        />
       </div>
       <div className={styles.loginContainer}>
         <div className={styles.loginWholeBorder} />
@@ -81,6 +39,75 @@ const LoginPage = () => {
             src="../reacticonsriridiscordfill.svg"
           />
         </button>
+      </div>
+      <div className={styles.topTextContainer}>
+        <div className={styles.swiftBotInterface}>SwiFT BOT INTERFACE</div>
+        <b className={styles.newerfasterbetter}>#NEWERFASTERBETTER</b>
+      </div>
+      <div className={styles.poweredByContainer}>
+        <div className={styles.swiftBotInterface}>
+          <span className={styles.poweredBy}>{`Powered by `}</span>
+          <span className={styles.teamSwift}>TEAM SWIFT</span>
+        </div>
+      </div>
+      <img
+        className={styles.worldPictureContainer}
+        alt=""
+        src="../world-picture-container@2x.png"
+      />
+      <div className={styles.twitterContainer}>
+        <div className={styles.roundBoxTwitter} />
+        <div className={styles.iconBoxTwitter} />
+        <img
+          className={styles.reactIconsriritwitterfill}
+          alt=""
+          src="../reacticonsriritwitterfill.svg"
+        />
+        <TwitterFollowers />
+        <div className={styles.twitterFollowers}>Twitter Followers</div>
+      </div>
+      <div className={styles.youtubeContainer}>
+        <div className={styles.roundBoxYoutube} />
+        <div className={styles.iconBoxYoutube} />
+        <img
+          className={styles.reactIconsririyoutubefill}
+          alt=""
+          src="../reacticonsririyoutubefill.svg"
+        />
+        <YoutubeSubs />
+        <div className={styles.youtubeSubscribers}>YouTube Subscribers</div>
+      </div>
+      <div className={styles.projectSchedulerContainer}>
+        <div className={styles.projectSchedulerContainer1} />
+        <img
+          className={styles.reactIconsimimclock}
+          alt=""
+          src="../reacticonsimimclock.svg"
+        />
+        <div className={styles.soon}>Soon!</div>
+        <div className={styles.projectScheduler}>Project Scheduler</div>
+      </div>
+      <div className={styles.meetingCalendarContainer}>
+        <div className={styles.projectSchedulerContainer1} />
+        <img
+          className={styles.reactIconsimimcalendar}
+          alt=""
+          src="../reacticonsimimcalendar.svg"
+        />
+        <div className={styles.soon}>Soon!</div>
+        <div className={styles.meetingCalendar}>Meeting Calendar</div>
+      </div>
+      <div className={styles.applicationManagerContainer}>
+        <div className={styles.projectSchedulerContainer1} />
+        <img
+          className={styles.reactIconsimimclock}
+          alt=""
+          src="../reacticonsriridatabase2fill.svg"
+        />
+        <div className={styles.accessToAll}>
+          Access to all past applications
+        </div>
+        <div className={styles.applicationManager}>Application Manager</div>
       </div>
       <div className={styles.navbarCointainer}>
         <nav className={styles.navbarBorder} id="nav-bar" />
