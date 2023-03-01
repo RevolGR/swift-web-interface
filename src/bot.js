@@ -15,7 +15,6 @@ const client = new Client({
 const { request } = require('undici')
 const express = require('express')
 const serveStatic = require('serve-static')
-const { clientId, clientSecret, port } = require('./config.json')
 const session = require('express-session');
 const passport = require('passport');
 const discordStrategy = require('./strategies/discordstrategy');
@@ -73,5 +72,5 @@ app.get('/', (req,res) =>{
   res.send({express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT'})
 })
 //initialize Website
-app.listen(port, () => console.log(`App listening at http://localhost:${port}`))
+app.listen(process.env.port, () => console.log(`App listening at http://localhost:${process.env.port}`))
 /*END OF API DASHBOARD ---*/
