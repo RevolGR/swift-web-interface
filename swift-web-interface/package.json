@@ -3,7 +3,10 @@
     "name": "swift_bot_web_interface",
     "version": "0.1.0",
     "private": true,
-    "proxy": "http://localhost:53134/",
+    "options": {
+    "allowedHosts": ["localhost", ".localhost"],
+    "proxy": "http://localhost:53134/"
+  },
     "dependencies": {
 			"@testing-library/jest-dom": "^5.16.1",
 			"@testing-library/react": "^13.3.0",
