@@ -1,7 +1,6 @@
 .env
 /node_modules
 /src/config.js
-/src/config.json
 node_modules
 test.js
 test
