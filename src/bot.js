@@ -20,6 +20,7 @@ const passport = require('passport');
 const discordStrategy = require('./strategies/discordstrategy');
 const db = require('./database/database')
 const path = require('path');
+const port = process.env.port2;
 
 db.then(() => console.log('Connected to MongoDB.')).catch(err => console.log(err));
 /*API INIT*/
@@ -72,5 +73,5 @@ app.get('/', (req,res) =>{
   res.send({express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT'})
 })
 //initialize Website
-app.listen(process.env.port, () => console.log(`App listening at http://localhost:${process.env.port}`))
+app.listen(port, () => console.log(`App listening at http://localhost:${port}`))
 /*END OF API DASHBOARD ---*/
