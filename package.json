@@ -5,7 +5,7 @@
   "main": "src/bot.js",
   "scripts": {
     "start": "node src/bot.js",
-    "dev": "nodemon src/bot.js & cd /swift-web-interface react-scripts start"
+    "dev": "concurrently \"cd swift-web-interface && npm run start\" \"npm run start\""
   },
   "keywords": [],
   "author": "Revol",
@@ -13,6 +13,7 @@
   "dependencies": {
     "@discordjs/rest": "^1.0.0",
     "chalk": "^4.1.2",
+    "concurrently": "^7.6.0",
     "discord-api-types": "^0.36.2",
     "discord.js": "^14.0.1",
     "dotenv": "^16.0.3",
