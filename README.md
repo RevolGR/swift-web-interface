@@ -1,5 +1,5 @@
 
-  # SwiFT-Bot-Interface
+  # SwiFT Bot Web Interface
 
   Note: Please ensure you have installed <code><a href="https://nodejs.org/en/download/">node js</a></code>
 

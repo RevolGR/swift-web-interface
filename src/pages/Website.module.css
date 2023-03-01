@@ -1,0 +1,545 @@
+@keyframes wobble-hor-bottom {
+  0%,
+  to {
+    transform: translateX(0);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.swiftLogoBlack1Icon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.newerfasterbetter {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-xl);
+  display: flex;
+  font-family: var(--font-outfit);
+  color: #000;
+  text-align: left;
+  align-items: center;
+}
+.navbar,
+.navbarFrame {
+  display: flex;
+  justify-content: flex-start;
+}
+.navbarFrame {
+  width: 295px;
+  height: 60px;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar {
+  align-self: stretch;
+  flex: 1;
+  background-color: #b7f800;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.login {
+  position: absolute;
+  top: calc(50% - 40.5px);
+  left: calc(50% - 78.5px);
+}
+.header {
+  position: relative;
+  width: 157px;
+  height: 81px;
+  flex-shrink: 0;
+}
+.loginHeaderFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.loginToYour {
+  position: relative;
+}
+.lightMiddleGreen {
+  position: relative;
+  width: 600px;
+  height: 556px;
+  flex-shrink: 0;
+  display: none;
+}
+.loginButton1 {
+  border-radius: 55px;
+  background-color: #2b2a2a;
+  box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  padding: 53px 70px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  font-size: var(--font-size-xl);
+}
+.loginButton,
+.loginHeaderFrameParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.loginHeaderFrameParent {
+  gap: 13px;
+}
+.loginButton {
+  align-self: stretch;
+  background-color: var(--color-gray-100);
+  padding: 371px 240px;
+  background-image: url(../../public/cloud.png);
+  background-size: cover;
+}
+.lightTopWhite {
+  position: relative;
+  width: 616px;
+  height: 435px;
+  flex-shrink: 0;
+}
+.lightTopWhiteWrapper {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.newerfasterbetter1,
+.swiftBotWeb {
+  position: relative;
+  display: inline-block;
+  width: 789px;
+  height: 46.5px;
+  flex-shrink: 0;
+}
+.newerfasterbetter1 {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: var(--font-outfit);
+  color: var(--color-white);
+}
+.header2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.arrowFrameChild {
+  position: relative;
+  width: 152px;
+  height: 152px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.arrowFrame,
+.header1 {
+  display: flex;
+  flex-direction: row;
+}
+.arrowFrame {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.arrowFrame:hover {
+  cursor: default;
+  animation: 1s ease-in-out 0s 1 alternate forwards wobble-hor-bottom;
+  opacity: 1;
+}
+.header1 {
+  align-self: stretch;
+  height: 206.67px;
+  flex-shrink: 0;
+  padding: 63px 0 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+.applicationManagerContainerChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-lg);
+  background-color: var(--color-gray-100);
+  box-shadow: 0 4px 4px 5px rgba(0, 0, 0, 0.4);
+  width: 300px;
+  height: 140px;
+}
+.accessToAll,
+.applicationManager {
+  position: absolute;
+  left: 14px;
+  font-family: var(--font-outfit);
+  text-align: left;
+}
+.applicationManager {
+  top: 17px;
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--color-white);
+}
+.accessToAll {
+  top: 49px;
+  font-size: var(--font-size-base);
+  font-weight: 300;
+  color: var(--color-dimgray);
+}
+.reactIconsimimdatabase {
+  position: absolute;
+  top: 111px;
+  left: 14px;
+  width: 15px;
+  height: 15px;
+}
+.applicationManagerContainer {
+  position: relative;
+  width: 300px;
+  height: 140px;
+  flex-shrink: 0;
+}
+.applicationFrame {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.applicationFrame:hover,
+.meetingCalendarFrame:hover,
+.projectSchedulerFrame:hover {
+  cursor: default;
+  animation: 0.4s ease-in-out 0s 2 alternate-reverse none fade-in;
+  opacity: 1;
+}
+.meetingCalendarContainerChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-lg);
+  background-color: var(--color-gray-100);
+  box-shadow: 0 4px 4px 5px rgba(0, 0, 0, 0.4), 0 4px 4px rgba(0, 0, 0, 0.7);
+  width: 300px;
+  height: 140px;
+}
+.meetingCalendar,
+.soon {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  font-family: var(--font-outfit);
+  color: var(--color-white);
+  text-align: left;
+}
+.soon {
+  top: 49px;
+  font-size: var(--font-size-base);
+  font-weight: 300;
+  color: var(--color-dimgray);
+}
+.reactIconsimimcalendar {
+  position: absolute;
+  top: 111px;
+  left: 15px;
+  width: 15px;
+  height: 15px;
+}
+.meetingCalendarFrame {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  flex-direction: column;
+  align-items: center;
+}
+.featuresFrame,
+.meetingCalendarFrame,
+.projectSchedulerFrame {
+  display: flex;
+  justify-content: flex-start;
+}
+.projectSchedulerFrame {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.featuresFrame {
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.worldPictureContainer12x1Icon {
+  position: relative;
+  width: 940px;
+  height: 105px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.featuresFrameParent,
+.worldPicture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.worldPicture {
+  justify-content: center;
+}
+.featuresFrameParent {
+  align-self: stretch;
+  height: 206.67px;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  gap: 7px;
+}
+.lightMiddleGreen1 {
+  position: relative;
+  width: 622px;
+  height: 556px;
+  flex-shrink: 0;
+}
+.lightMiddleGreenWrapper {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.span {
+  font-weight: 600;
+  font-family: var(--font-outfit);
+}
+.teamSwift {
+  font-family: var(--font-dirtyline-36daysoftype-2022);
+  background: linear-gradient(
+    235.22deg,
+    #b8f800 26.56%,
+    #fff 77.08%,
+    rgba(255, 255, 255, 0.56)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.poweredByTeamContainer {
+  position: relative;
+  display: inline-block;
+  width: 942px;
+  height: 60px;
+  flex-shrink: 0;
+}
+.poweredByText {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.youtubeSubscribersContainerChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-sm);
+  background-color: var(--color-gray-100);
+  box-shadow: 0 4px 4px 5px rgba(0, 0, 0, 0.4);
+  width: 460px;
+  height: 82px;
+}
+.youtubeSubscribersContainerItem {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  border-radius: var(--br-xs);
+  background: linear-gradient(
+    235.22deg,
+    #b8f800,
+    rgba(255, 255, 255, 0.56),
+    #fff
+  );
+  width: 60px;
+  height: 50px;
+}
+.reactIconsimimyoutube {
+  position: absolute;
+  top: 29px;
+  left: 38px;
+  width: 24.01px;
+  height: 24px;
+}
+.reactIconsioioiospeople {
+  position: absolute;
+  top: 42px;
+  left: 88px;
+  width: 14px;
+  height: 14px;
+}
+.youtubeSubscribers {
+  position: absolute;
+  top: 18px;
+  left: 88px;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-outfit);
+  color: var(--color-white);
+  text-align: left;
+}
+.youtubeSubscribersContainer {
+  position: relative;
+  width: 460px;
+  height: 82px;
+  flex-shrink: 0;
+}
+.youtubeFrame {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.reactIconsimimtwitter {
+  position: absolute;
+  top: 29px;
+  left: 37.99px;
+  width: 24.01px;
+  height: 24px;
+}
+.twitterFrame {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.socialsFrame {
+  width: 940px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.poweredByTextParent {
+  align-self: stretch;
+  height: 206.67px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: 103px;
+  color: var(--color-white);
+  font-family: var(--font-outfit);
+}
+.spray072Icon {
+  position: relative;
+  width: 1080px;
+  height: 392px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.sprayPaint {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  opacity: 0.7;
+}
+.features {
+  align-self: stretch;
+  flex: 1;
+  background-color: var(--color-gray-100);
+  overflow: hidden;
+  flex-direction: column;
+  padding: 0 0 200px;
+  gap: 100px;
+  font-size: var(--font-size-2xl);
+  color: #b8f800;
+  font-family: var(--font-dirtyline-36daysoftype-2022);
+  background-image:url(../../public/features-bg.png);
+  background-size: cover;
+  background-position-x:-182px;
+  overflow: hidden;
+}
+.body,
+.features,
+.website {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.body {
+  align-self: stretch;
+  height: 932px;
+  flex-shrink: 0;
+  flex-direction: row;
+  overflow: hidden;
+}
+.website {
+  position: relative;
+  width: 100%;
+  height: 992px;
+  flex-direction: column;
+  text-align: left;
+  font-size: 64px;
+  overflow: hidden;
+  color: var(--color-white);
+  font-family: var(--font-outfit);
+}
+@media screen and (max-width: 1200px) {
+  .featuresFrame {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 960px) {
+  .featuresFrame {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 420px) {
+  .featuresFrame {
+    flex-direction: column;
+  }
+}
